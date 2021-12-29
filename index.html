@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webwiz.Shirsho</title>
+    <link rel="stylesheet" href="webwiz.css">
+    <style>
+         body {background: url(https://images.unsplash.com/photo-1640550105003-e9742ea5ce84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size:100% 100% ;
+          min-height: 800px;
+          max-height: 900px;} 
+          .changebg {
+            background: url(bg2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:100% 100% ;
+            min-height: 800px;
+            max-height: 900px;
+            color: white; }
+    </style>
+</head>
+<body>
+      <div id="tn" class="topnav">
+        <a class="active" href="#home" style="font-family:verdana">Home</a>
+        <a href="#about" style="font-family:verdana">About</a>
+        <a href="#contact" style="font-family:verdana">Contact</a>
+        <a href="#help" style="font-family:verdana">Help</a>
+        <a href="#Dark Mode" onclick="mydark()"><b>Change Background</b></a>
+      </div>
+      <br> 
+      <form>
+          <div class="container">
+            <div id="img_av">
+                <img src="https://www.w3schools.com/howto/img_avatar2.png"  name="Avatar" height="200" width="200" class="avatar" id="img_av">
+              </div>
+              <h1 style="color: rgb(233, 233, 243)" style="font-family:Georgia, serif"><b>SIGN IN</b></h1>
+              <label for="uname" style="color: wheat;"><b>EMAIL ID</b></label>
+              <input type="email" style="border-radius: 30px" placeholder="Enter Email" name="uname" id="uname">
+              <label for="psw1" style="color: wheat;"><b>PASSWORD</b></label>
+              <input type="password" style="border-radius: 30px" placeholder="Enter Password" name="psw1" id="psw1">
+              <label for="psw2" style="color: wheat;"><b>CONFIRM PASSWORD</b></label>
+              <input type="password" style="border-radius: 30px" placeholder="Enter Password" name="psw2" id="psw2">
+              
+              <div class="popup">
+                <button onclick="alert('You have logged in')" type="submit"><b>LOGIN</b></button>
+              </div>
+              <label style="color: white"><input type="checkbox" name="remember">Remember me</label><br>
+              <!-- <span style="color: wheat;" class="psw">Forgot</span> -->
+              <a href="#" style="color: rgb(12, 11, 11);text-align: right" onclick="myFunc()">Forgot password?</a>
+              <h5 style="text-align: center; color:thistle">Login With Social Media</h5>
+              <div class="logo">
+                <img src="facebook.png" style="border-radius: 100px" height="40" width="40" name="logo">
+                <img src="ig.jfif" style="border-radius: 100px"  height="40" width="40">
+              </div>
+            </div> 
+            <script>
+              function myFunc()
+              {
+                console.log("You have forgotten Your password");
+              }
+              function mydark()
+              {
+                document.body.classList.toggle("changebg");
+                var para = document.getElementById("tn");
+  
+                if(para.classList.contains("topnav2")) {
+                   para.classList.remove("topnav2");
+                  }
+                else {
+                   para.classList.add("topnav2");
+                  }
+              }
+            </script>
+          </div>    
+      </form>
+</body>
+</html>

@@ -1,0 +1,120 @@
+
+.topnav {
+    background-color:transparent;
+    overflow: hidden;
+  }
+  
+  
+  .topnav a {
+    cursor: pointer;
+    float: left;
+    color: #111010;
+    text-align: end;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav2 {
+    background-color:transparent;
+    overflow: hidden;
+  }
+  .topnav2 a {
+    cursor: pointer;
+    float: left;
+    color: #eee7e7;
+    text-align: end;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: rgb(12, 27, 95);
+    color: rgb(243, 240, 240);
+    border-radius: 30px;
+  }
+  .topnav2 a:hover {
+    background-color: rgb(68, 6, 32);
+    color: rgb(243, 240, 240);
+    border-radius: 30px;
+  }
+  
+  
+  .topnav a.active {
+    background:black;
+    color: white;
+    border-radius: 30px;
+  }
+  .topnav2 a.active {
+    background:rgb(33, 11, 128);
+    color: white;
+    border-radius: 30px;
+  }
+
+  input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(151, 21, 202);
+    box-sizing: border-box;
+  }
+  button {
+    border-radius: 40px;
+    background-color: #0ab476;
+    color: white;
+    padding: 14px 20px;
+    margin: 6px 0;
+    border-color: rgb(8, 167, 8);
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.5;
+  }
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    max-height: 800px;
+    max-width: 500px;
+    padding: 16px;
+    background-color: rgb(45, 142, 207);
+    opacity: 0.8;
+  }
+  #img_av {
+    text-align: center;
+    cursor: pointer;
+    border-radius: 100px;
+  }
+  #img_av:hover {
+    opacity: 0.7;
+  }
+  .logo {
+    text-align: center;
+    cursor:pointer;
+    border-radius: 100px;
+    }
+   /* .bg-img {
+    
+    background-image: url("https://images.unsplash.com/photo-1640550105003-e9742ea5ce84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    
+     min-height: 800px;
+     max-height: 900px; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 100% ;
+    position: relative;
+  }  */
+  
